@@ -1,0 +1,6 @@
+<h2>User Submissions</h2>
+<ul>
+    {% for submission in submissions %}
+        <li>{{ submission.name }} - {{ submission.email }} (Submitted on {{ submission.submitted_at }})</li>
+    {% endfor %}
+</ul>

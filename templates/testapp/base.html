@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Personal Dashboard{% endblock %}</title>
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Quotes</a></li>
+                <li><a href="/submit">Submit Info</a></li>
+                <li><a href="/submissions">View Submissions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to your personalized dashboard!</h2>
+    <p>Current Date & Time: {{ current_time }}</p>
+    <p>Random Quote: "{{ random_quote }}"</p>
+    </main>
+
+    <footer>
+        <p>Developed by Arupananda parida | Contact: arupanandabaya456@gmail.com</p>
+    </footer>
+</body>
+</html>
